@@ -2,7 +2,7 @@
 Citizen.CreateThread(
     function()
         while true do
-            local sleep = 1000
+            local sleep = 1000 
             for k, loc in pairs(locations) do
                 if GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), loc.pos.x, loc.pos.y, loc.pos.z, true) <= 15 then
                     sleep = 1
